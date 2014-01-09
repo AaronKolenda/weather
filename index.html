@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather Comparison App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap (imported in main.css-->
+    <link href="main.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  
+	<div id="wrap">
+  
+		<div class="container">
+	
+			<div class="page-header text-center">
+	
+				<h1>Weather Comparison App</h1>
+			
+				<p>This app is for easily comparing the monthly average highs, precipitation, and amount of sun for 
+			different cities.</p>
+			
+			</div>
+	
+			<div class="row">
+				<div class="col-md-4">
+					<p>Choose a city:</p>
+					<select id="select1">
+						<option value="0">Atlanta</option>
+						<option value="1">Austin</option>
+						<option value="2">Cleveland</option>
+						<option value="3">Denver</option>
+						<option value="4">Los Angeles</option>
+						<option value="5">Miami</option>
+						<option value="6">New York</option>
+						<option value="7">Phoenix</option>
+						<option value="8">San Francisco</option>
+						<option value="9">Seattle</option>	
+						<option value="10">Washington DC</option>
+					</select> 
+				</div>
+			
+				<div class="col-md-4">
+					<p">Choose another city:</p>
+					<select id="select2">
+						<option value="0">Atlanta</option>
+						<option value="1">Austin</option>
+						<option value="2">Cleveland</option>
+						<option value="3">Denver</option>
+						<option value="4">Los Angeles</option>
+						<option value="5">Miami</option>
+						<option value="6">New York</option>
+						<option value="7">Phoenix</option>
+						<option value="8">San Francisco</option>
+						<option value="9">Seattle</option>	
+						<option value="10">Washington DC</option>
+					</select> 
+				</div>
+			
+				<div class="col-md-4">
+					<p>Choose data to compare:</p>
+					<select id="select3">
+						<option value="0">January Average High</option>
+						<option value="1">February Average High</option>
+						<option value="2">March Average High</option>
+						<option value="3">April Average High</option>
+						<option value="4">May Average High</option>
+						<option value="5">June Average High</option>
+						<option value="6">July Average High</option>
+						<option value="7">August Average High</option>
+						<option value="8">September Average High</option>
+						<option value="9">October Average High</option>
+						<option value="10">November Average High</option>	
+						<option value="11">December Average High</option>	
+						<option value="12">Average Yearly Snowfall</option>	
+						<option value="13">Average Yearly Sun</option>
+						<option value="14">Average Yearly Precipitation</option>				
+					</select> 
+				</div>
+			</div>
+	
+			<div class="row">
+				<button type="button" class="btn btn-primary center-block" id="go">Go</button>
+			</div>
+		
+			<div class="row">
+				<div class="col-md-4" id="result1">
+				</div>
+				
+				<div class="col-md-4" id="result2">
+				</div>
+			</div>
+		
+
+		</div> <!-- End Container -->
+		
+		<div id="push"></div>
+		</div> <!-- End wrap -->
+		
+		<div id="footer">
+			<div class="container">
+				<p> All data is taken from Wikipedia climate charts, which cite NOAA (extremes 1871-present)
+				and HKO (sun only, 1961-1990) as the sources.</p>
+			</div>
+		</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	<!-- Include the climate data -->
+	<script src="data.js"></script>
+	<!-- Include the functionality -->
+	<script src="application.js"></script>
+  </body>
+</html>

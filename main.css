@@ -1,0 +1,49 @@
+@import url("bootstrap.min.css");	
+
+/* Importing Bootstrap css, my overrides are below */
+
+.btn {
+margin-top: 40px;
+margin-bottom: 20px;
+}
+
+.page-header {
+background-color: #FEF1E9;
+border-radius: 5px;
+padding: 10px;
+}
+
+/* The following is all to add a sticky footer to the bottom of the page. */
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: 60px;
+}
+#footer {
+  background-color: #eee;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+#footer {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+}
